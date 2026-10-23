@@ -3,9 +3,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Servicos from './Serviços.jsx'
+import Manutencao from './Manutencao.jsx'
+import Chamado from './Chamado.jsx'
+
 
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
+import Solucoes from './Solucoes.jsx'
 
 
 const router = createBrowserRouter([
@@ -17,6 +21,20 @@ const router = createBrowserRouter([
     path: "/servicos",
     element:  <Servicos />,
   },
+   {
+    path: "/manutencao",
+    element:  <Manutencao />,
+  },
+   {
+    path: "/chamado",
+    element:  <Chamado />,
+  },
+  {
+    path: "/Solucoes",
+    element:  <Solucoes />,
+  },
+
+
   
 ]);
 

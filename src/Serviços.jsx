@@ -9,7 +9,7 @@ function Servicos() {
     <div className={styles.page}>
       <nav className={styles.navbar}>
         <Link to="/servicos">Serviços</Link>
-        <Link to="#manutencao">Manutenção</Link>
+        <Link to="/manutencao">Manutenção</Link>
         <Link to="#chamado">Abrir Chamado</Link>
         <Link to="#solucoes">Soluções</Link>
         <Link to="#sobre">Sobre</Link>
