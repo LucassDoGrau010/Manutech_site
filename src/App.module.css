@@ -94,7 +94,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 8px;
+  font-size: 15px;
   color: #111111;
   background-color: #ffffff;
   border-radius: 3px;
@@ -103,24 +103,27 @@
 
 .arrow {
   margin-top: 8px;
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 1;
   color: #000000;
 }
 
 .enterButton {
-  margin-top: 14px;
+  margin-top: 30px;
   width: 187px;
   height: 46px;
   border: 1px solid #d58b00;
   border-radius: 10px;
   background-color: #ffb900;
   color: #000000;
-  font-size: 26px;
+  font-size: 40px;
+  display: flex;
   font-weight: normal;
+  align-items: center;    
+  justify-content: center;
   cursor: pointer;
-  box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+  box-shadow: 0 4px 3px rgb(0 0 0 / 20%);
   transition:
     background-color 0.2s,
     transform 0.2s;

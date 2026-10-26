@@ -3,6 +3,8 @@
 import { Link } from 'react-router';
 import styles from './App.module.css';
 
+import img6 from './assets/img6.png'
+
 function App() {
   const entrar = () => {
     alert('Bem-vindo ao Manutec Industrial!');
@@ -16,7 +18,7 @@ function App() {
 
       <section className={styles.banner}>
         <img
-          src="/logo.png"
+          src={img6}
           alt="Logo Manutec Industrial"
           className={styles.logo}
         />

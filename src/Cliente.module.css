@@ -1,0 +1,314 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Menu superior */
+.navbar {
+  min-height: 31px;
+  flex-shrink: 0;
+  background: #153a5b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 3%;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.navbar a:hover {
+  color: #ffb900;
+}
+
+/* Cabeçalho azul */
+.header {
+  height: 31px;
+  flex-shrink: 0;
+  background: #226aa5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 12px;
+}
+
+/* Conteúdo principal */
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "intro intro"
+    "ticket illustration"
+    "info actions"
+    "button actions";
+  column-gap: 6%;
+  row-gap: 24px;
+  align-content: start;
+  padding: 108px 5% 35px;
+}
+
+/* Título e descrição */
+.intro {
+  grid-area: intro;
+  margin-bottom: 13px;
+}
+
+.intro h2 {
+  font-size: 25px;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.intro h3 {
+  font-size: 16px;
+  color: #176db5;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Cartão amarelo do chamado */
+.ticket {
+  grid-area: ticket;
+  align-self: start;
+  width: 100%;
+  max-width: 383px;
+  background: #ffb900;
+  border: 1px solid #e6a000;
+  border-radius: 17px;
+  padding: 13px 24px 5px;
+  color: #000;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 25%);
+}
+
+.ticket h3 {
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+
+.ticket ul {
+  padding-left: 24px;
+}
+
+.ticket li {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.18;
+}
+
+/* Imagem do lado direito */
+.illustration {
+  grid-area: illustration;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+  margin-top: -130px;
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Cartão de informações */
+.infoCard {
+  grid-area: info;
+  width: 100%;
+  max-width: 380px;
+  min-height: 165px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 25%);
+}
+
+.infoCard h3,
+.actionsCard h3 {
+  font-size: 16px;
+  color: #176db5;
+  margin-bottom: 8px;
+}
+
+.infoText {
+  padding-left: 31px;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.infoText ul {
+  padding-left: 17px;
+  margin-top: 2px;
+}
+
+.infoText p {
+  margin-bottom: 1px;
+}
+
+/* Cartão de ações */
+.actionsCard {
+  grid-area: actions;
+  width: 100%;
+  max-width: 380px;
+  min-height: 165px;
+  justify-self: end;
+  padding: 15px 28px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 25%);
+}
+
+.actionsCard ul {
+  padding-left: 44px;
+}
+
+.actionsCard li {
+  padding-left: 1px;
+  font-size: 16px;
+  line-height: 1.05;
+  color: #383838;
+}
+
+/* Botão novo chamado */
+.newButton {
+  grid-area: button;
+  width: 100%;
+  max-width: 373px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+  margin-top: 0;
+  border-radius: 9px;
+  background: #ffb900;
+  color: #111;
+  font-size: 13px;
+  text-decoration: none;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 25%);
+  transition: background 0.2s;
+}
+
+.newButton:hover {
+  background: #ffd04d;
+}
+
+/* Rodapé */
+.footer {
+  min-height: 30px;
+  flex-shrink: 0;
+  background: #153a5b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 7px 10px;
+  font-size: 12px;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 700px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+    padding: 12px;
+  }
+
+  .navbar a {
+    font-size: 11px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"
+      "ticket"
+      "illustration"
+      "info"
+      "actions"
+      "button";
+    gap: 25px;
+    padding: 40px 6% 30px;
+  }
+
+  .intro {
+    margin-bottom: 0;
+  }
+
+  .intro h2 {
+    font-size: 23px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .ticket,
+  .infoCard,
+  .actionsCard,
+  .newButton {
+    max-width: none;
+  }
+
+  .ticket {
+    padding: 15px 18px;
+  }
+
+  .ticket li {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .illustration {
+    margin-top: 0;
+  }
+
+  .illustration img {
+    max-width: 290px;
+  }
+
+  .actionsCard {
+    justify-self: stretch;
+  }
+
+  .actionsCard li {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .newButton {
+    height: 40px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}

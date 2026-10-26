@@ -1,0 +1,216 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+/* Menu superior */
+.navbar {
+  min-height: 31px;
+  flex-shrink: 0;
+  background: #153a5b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 3%;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.navbar a:hover {
+  color: #ffb900;
+}
+
+/* Cabeçalho azul */
+.header {
+  height: 32px;
+  flex-shrink: 0;
+  background: #226aa5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Conteúdo */
+.content {
+  flex: 1;
+  padding: 77px 4.8% 30px;
+}
+
+/* Apresentação */
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  color: #111;
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+
+.introButton {
+  display: block;
+  width: 175px;
+  margin: 0 auto;
+  padding: 2px 10px;
+  border-radius: 15px;
+  background: #ffb900;
+  color: #111;
+  text-decoration: none;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+  transition: background 0.2s;
+}
+
+.introButton:hover {
+  background: #ffd04d;
+}
+
+.description {
+  margin: 45px auto 0;
+  font-size: 18px;
+  line-height: 0.9;
+  color: #111;
+}
+
+/* Cartões e imagem */
+.lowerContent {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 35px;
+  align-items: center;
+  margin-top: 58px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  border: 1px solid #d8caca;
+  border-radius: 9px;
+  padding: 12px 13px;
+  background: #fff;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 22%);
+}
+
+.card h3 {
+  color: #176db5;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  border-left: 2px solid #ddd;
+  padding-left: 10px;
+  color: #444;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* Ilustração à direita */
+.illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Rodapé */
+.footer {
+  min-height: 30px;
+  flex-shrink: 0;
+  background: #153a5b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 7px 10px;
+  font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+    padding: 12px;
+  }
+
+  .navbar a {
+    font-size: 11px;
+  }
+
+  .content {
+    padding: 45px 5% 30px;
+  }
+
+  .intro h2 {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.2;
+    margin-top: 30px;
+  }
+
+  .description br {
+    display: none;
+  }
+
+  .lowerContent {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 40px;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .card p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .illustration img {
+    max-width: 260px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}

@@ -10,10 +10,10 @@ function Servicos() {
       <nav className={styles.navbar}>
         <Link to="/servicos">Serviços</Link>
         <Link to="/manutencao">Manutenção</Link>
-        <Link to="#chamado">Abrir Chamado</Link>
-        <Link to="#solucoes">Soluções</Link>
-        <Link to="#sobre">Sobre</Link>
-        <Link to="#login">Login</Link>
+        <Link to="/chamado">Abrir Chamado</Link>
+        <Link to="/solucoes">Soluções</Link>
+        <Link to="/sobre">Sobre</Link>
+        <Link to="/login">Login</Link>
       </nav>
 
       <header className={styles.hero} id="manutencao">
