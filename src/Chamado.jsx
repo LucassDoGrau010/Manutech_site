@@ -1,8 +1,8 @@
 
 import { useState } from 'react';
 import styles from './chamado.module.css';
+
 import img4 from './assets/img4.png'
-import { Link } from 'react-router';
 
 function Chamado() {
   const [nome, setNome] = useState('');

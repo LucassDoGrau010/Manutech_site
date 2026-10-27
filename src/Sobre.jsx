@@ -1,19 +1,16 @@
 
-import { Link } from 'react-router';
 import styles from './Sobre.module.css';
-
-import img8 from './assets/img8.png'
 
 function Sobre() {
   return (
     <div className={styles.page}>
       <nav className={styles.navbar}>
-        <Link to="/servicos">Serviços</Link>
-        <Link to="/manutencao">Manutenção</Link>
-        <Link to="/chamado">Abrir Chamado</Link>
-        <Link to="/solucoes">Soluções</Link>
-        <Link to="/sobre">Sobre</Link>
-        <Link to="/login">Login</Link>
+        <a href="/servicos">Serviços</a>
+        <a href="/manutencao">Manutenção</a>
+        <a href="/chamado">Abrir Chamado</a>
+        <a href="/solucoes">Soluções</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/login">Login</a>
       </nav>
 
       <header className={styles.header}>
@@ -85,7 +82,7 @@ function Sobre() {
 
           <div className={styles.illustration}>
             <img
-              src={img8}
+              src="/sobre-manutec.png"
               alt="Ilustração de tecnologia e manutenção industrial"
             />
           </div>

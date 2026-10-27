@@ -2,8 +2,6 @@
 import { useState } from 'react';
 import styles from './Login.module.css';
 
-import img9 from './assets/img9.png'
-
 function Login() {
   const [emailLogin, setEmailLogin] = useState('');
   const [senhaLogin, setSenhaLogin] = useState('');
@@ -33,12 +31,12 @@ function Login() {
   return (
     <div className={styles.page}>
       <nav className={styles.navbar}>
-        <Link to="/servicos">Serviços</Link>
-        <Link to="/manutencao">Manutenção</Link>
-        <Link to="/chamado">Abrir Chamado</Link>
-        <Link to="/solucoes">Soluções</Link>
-        <Link to="/sobre">Sobre</Link>
-        <Link to="/login">Login</Link>
+        <a href="/servicos">Serviços</a>
+        <a href="/manutencao">Manutenção</a>
+        <a href="/chamado">Abrir Chamado</a>
+        <a href="/solucoes">Soluções</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/login">Login</a>
       </nav>
 
       <header className={styles.header}>
@@ -123,7 +121,7 @@ function Login() {
 
         <div className={styles.illustration}>
           <img
-            src={img9}
+            src="/login-security.png"
             alt="Ilustração de login e segurança"
           />
         </div>

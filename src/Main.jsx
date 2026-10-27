@@ -10,8 +10,8 @@ import Chamado from './Chamado.jsx'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Solucoes from './Solucoes.jsx'
-import Login from './Login.jsx'
 import Sobre from './Sobre.jsx'
+import Login from './Login.jsx'
 import Cliente from './Cliente.jsx'
 
 
@@ -21,35 +21,36 @@ const router = createBrowserRouter([
     element:  <App />,
   },
     {
-    path: "/servicos",
+    path: "/Servicos",
     element:  <Servicos />,
   },
    {
-    path: "/manutencao",
+    path: "/Manutencao",
     element:  <Manutencao />,
   },
    {
-    path: "/chamado",
+    path: "/Chamado",
     element:  <Chamado />,
   },
   {
-    path: "/solucoes",
+    path: "/Solucoes",
     element:  <Solucoes />,
   },
    {
-    path: "/sobre",
+    path: "/Sobre",
     element:  <Sobre />,
   },
+
    {
-    path: "/login",
+    path: "/Login",
     element:  <Login />,
   },
-  {
-    path: "/cliente",
+
+   {
+    path: "/Cliente",
     element:  <Cliente />,
   },
-  
-  
+
 
 
   
