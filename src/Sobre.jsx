@@ -1,16 +1,17 @@
 
+import { Link } from 'react-router';
 import styles from './Sobre.module.css';
 
 function Sobre() {
   return (
     <div className={styles.page}>
       <nav className={styles.navbar}>
-        <a href="/servicos">Serviços</a>
-        <a href="/manutencao">Manutenção</a>
-        <a href="/chamado">Abrir Chamado</a>
-        <a href="/solucoes">Soluções</a>
-        <a href="/sobre">Sobre</a>
-        <a href="/login">Login</a>
+        <Link to="/servicos">Serviços</Link>
+        <Link to="/manutencao">Manutenção</Link>
+        <Link to="/chamado">Abrir Chamado</Link>
+        <Link to="/solucoes">Soluções</Link>
+        <Link to="/sobre">Sobre</Link>
+        <Link to="/login">Login</Link>
       </nav>
 
       <header className={styles.header}>
