@@ -1,8 +1,12 @@
 
 import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './Login.module.css';
 
+import img9 from './assets/img9.png'
+
 function Login() {
+  const navigate = useNavigate();
   const [emailLogin, setEmailLogin] = useState('');
   const [senhaLogin, setSenhaLogin] = useState('');
 
@@ -15,6 +19,7 @@ function Login() {
   function entrar(event) {
     event.preventDefault();
     alert('Formulário de login enviado!');
+    navigate('/cliente');
   }
 
   function criarConta(event) {
@@ -26,6 +31,7 @@ function Login() {
     }
 
     alert('Cadastro preenchido com sucesso!');
+    navigate('/cliente');
   }
 
   return (
@@ -121,7 +127,8 @@ function Login() {
 
         <div className={styles.illustration}>
           <img
-            src="/login-security.png"
+            src={img9}
+            
             alt="Ilustração de login e segurança"
           />
         </div>

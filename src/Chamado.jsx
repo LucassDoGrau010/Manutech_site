@@ -1,8 +1,9 @@
 
 import { useState } from 'react';
-import styles from './chamado.module.css';
+import { Link } from 'react-router-dom';
+import styles from './Chamado.module.css';
 
-import img4 from './assets/img4.png'
+import img7 from './assets/img7.png'
 
 function Chamado() {
   const [nome, setNome] = useState('');
@@ -124,11 +125,11 @@ function Chamado() {
               })
             }
           >
-            src={img4}
+            src={img7}
           </button>
         </section>
       </main>
-
+            
       <footer className={styles.footer}>
         © 2026 Manutec - Manutenção Industrial
       </footer>

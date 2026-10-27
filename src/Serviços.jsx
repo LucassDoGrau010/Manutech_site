@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import styles from './Servicos.module.css';
 
 

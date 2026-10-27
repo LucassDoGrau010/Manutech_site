@@ -1,6 +1,6 @@
 
 
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import styles from './App.module.css';
 
 import img6 from './assets/img6.png'

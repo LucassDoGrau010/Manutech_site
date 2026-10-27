@@ -1,5 +1,8 @@
 
+import { Link } from 'react-router-dom';
 import styles from './Solucoes.module.css';
+
+import img5 from './assets/img5.png'
 
 function Solucoes() {
   return (
@@ -38,7 +41,7 @@ function Solucoes() {
 
         <div className={styles.imageContainer}>
           <img
-            src="/solucoes-industriais.png"
+            src={img5}
             alt="Profissional de manutenção industrial com ferramentas"
           />
         </div>

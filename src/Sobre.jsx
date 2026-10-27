@@ -1,6 +1,8 @@
 
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import styles from './Sobre.module.css';
+
+import img5 from './assets/img5.png'
 
 function Sobre() {
   return (
@@ -83,7 +85,7 @@ function Sobre() {
 
           <div className={styles.illustration}>
             <img
-              src="/sobre-manutec.png"
+              src={img5}
               alt="Ilustração de tecnologia e manutenção industrial"
             />
           </div>

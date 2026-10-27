@@ -1,13 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import './Index.css'
 import App from './App.jsx'
 import Servicos from './Serviços.jsx'
-import Manutencao from './manutencao.jsx'
+import Manutencao from './Manutencao.jsx'
 import Chamado from './Chamado.jsx'
 
 
-import { createBrowserRouter } from "react-router";
-import { RouterProvider } from "react-router/dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Solucoes from './Solucoes.jsx'
 import Sobre from './Sobre.jsx'
 import Login from './Login.jsx'
@@ -20,36 +20,33 @@ const router = createBrowserRouter([
     element:  <App />,
   },
     {
-    path: "/Servicos",
+    path: "/servicos",
     element:  <Servicos />,
   },
    {
-    path: "/Manutencao",
+    path: "/manutencao",
     element:  <Manutencao />,
   },
    {
-    path: "/Chamado",
+    path: "/chamado",
     element:  <Chamado />,
   },
   {
-    path: "/Solucoes",
+    path: "/solucoes",
     element:  <Solucoes />,
   },
-   {
-    path: "/Sobre",
+  {
+    path: "/sobre",
     element:  <Sobre />,
   },
-
-   {
-    path: "/Login",
+  {
+    path: "/login",
     element:  <Login />,
   },
-
-   {
-    path: "/Cliente",
+  {
+    path: "/cliente",
     element:  <Cliente />,
   },
-
 
 
   

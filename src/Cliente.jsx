@@ -1,5 +1,8 @@
 
+import { Link } from 'react-router-dom';
 import styles from './Cliente.module.css';
+
+import img10 from './assets/img10.png'
 
 function Cliente() {
   return (
@@ -44,7 +47,7 @@ function Cliente() {
 
         <div className={styles.illustration}>
           <img
-            src="/cliente-analise.png"
+            src={img10}
             alt="Análise e acompanhamento de chamados de manutenção"
           />
         </div>
